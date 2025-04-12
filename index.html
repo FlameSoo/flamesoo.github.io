@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>flamesoo - GitHub Bio</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+      color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+      animation: backgroundShift 20s infinite alternate;
+    }
+
+    @keyframes backgroundShift {
+      0% { background-position: 0% 50%; }
+      100% { background-position: 100% 50%; }
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(12px);
+      border-radius: 2rem;
+      padding: 2.5rem;
+      max-width: 500px;
+      width: 90%;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+      text-align: center;
+      animation: float 6s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0); }
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+      background: linear-gradient(to right, #ff6a00, #ee0979);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin: 1rem 0;
+    }
+
+    a {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.6rem 1.2rem;
+      border-radius: 30px;
+      background: linear-gradient(to right, #43cea2, #185a9d);
+      color: white;
+      text-decoration: none;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    a:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 12px #43cea2;
+    }
+
+    .glow {
+      text-shadow: 0 0 5px #fff, 0 0 10px #58a6ff, 0 0 20px #58a6ff;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1 class="glow">@flamesoo</h1>
+    <p>Hello there! I'm <strong>flamesoo</strong> — a passionate developer crafting elegant code and powerful user experiences. I thrive on open source, love building things from scratch, and never stop learning.</p>
+    <p>⚡ JavaScript • TypeScript • React • Node.js<br>
+       🔭 Exploring Web3 & AI<br>
+       🌱 Always building, always curious.</p>
+    <a href="https://github.com/flamesoo" target="_blank">View My GitHub</a>
+  </div>
+</body>
+</html>
